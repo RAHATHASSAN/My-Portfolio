@@ -43,12 +43,14 @@
       <h2><span id="typing"></span></h2>
 
       <div class="btns">
-        <a href="#" class="btn">Hire Me</a>
+        <!-- <a href="#" class="btn">Hire Me</a> -->
+         <a href="javascript:void(0)" class="btn" onclick="openHire()">Hire Me</a>
         <a href="cv pdf/SH rahat cv.pdf" class="btn-outline" target="_blank">See My CV</a>
       </div>
     </div>
   </div>
 </section>
+
 
 <!-- ABOUT -->
 <section id="about" class="fade-up">
@@ -60,19 +62,33 @@
     </div>
 
     <div class="about-text">
-      <p>
-        Hello! I'm <b>Md Sazid Hassan Rahat</b>, a passionate Frontend Developer 
-        and AI Researcher. I build modern web apps and AI-based solutions.
-      </p>
+<p>
+Hello! I’m <b>Md Sazid Hassan Rahat</b>, a passionate <b>Frontend Developer</b>, <b>UI/UX Designer</b>, and <b>Digital Marketing enthusiast</b> with over <b>1+ year of experience</b> in this field. I specialize in building modern, responsive, and user-friendly web applications with a strong focus on clean design and smooth user experience.
+</p>
 
-      <p>
-        Published in <b>2026 IEEE Conference (QPAIN)</b>
-      </p>
+<p>
+Alongside frontend development, I work in <b>UI/UX design</b>, where I create mobile app designs using <b>Figma</b> and develop intuitive user interfaces that are both functional and visually appealing. I also use <b>Canva</b> to design engaging social media posts and marketing creatives for different brands.
+</p>
 
-      <p>
-        <b>Research:</b> DAPT-XLMR Framework for Depression Detection
-      </p>
+<p>
+In digital marketing, I have hands-on experience running <b>Facebook ad campaigns</b>, managing <b>email marketing</b>, and developing social media strategies to improve brand awareness and engagement. Currently, I am working on a fashion house advertising campaign where I handle creative design, ad strategy, and campaign execution.
+</p>
 
+<p>
+I have completed and worked on multiple projects in <b>web development</b>, <b>UI/UX design</b>, and <b>digital marketing</b>, which have strengthened both my technical and creative expertise.
+</p>
+
+<p>
+In addition to my professional work, I am also involved in research. My paper has been published in the <b>2026 IEEE Conference (QPAIN)</b> titled <b>“DAPT-XLMR Framework for Depression Detection”</b>. This research focuses on leveraging advanced NLP and transformer-based AI models to improve depression detection from text data.
+</p>
+
+<p>
+Currently, I am gaining real-world industry experience through an internship at <b>Shahjalal Islami Bank PLC</b>, where I am working in the IT Security department using open-source tools. This experience is helping me understand enterprise-level systems, security practices, and real-world IT operations.
+</p>
+
+<p>
+With over a year of experience, I am continuously learning, improving my skills, and working on impactful projects that combine <b>creativity, technology, and real-world problem-solving</b>.
+</p>
       <div class="personal-box">
         <div class="p-box">Name: Sazid Hassan Rahat</div>
         <div class="p-box">Email: rahathassan297@gmail.com</div>
@@ -92,27 +108,35 @@
 </section>
 
 <!-- EDUCATION -->
+<!-- EDUCATION -->
 <section id="education" class="fade-up">
   <h2 class="section-title">Education</h2>
 
   <div class="edu-container">
+
     <div class="edu-box">
       <h3>SSC</h3>
-      <p>Banani Bidyaniketan</p>
+      <a href="https://www.banani-bidyaniketan.edu.bd/" target="_blank">
+        Banani Bidyaniketan
+      </a>
     </div>
 
     <div class="edu-box">
       <h3>HSC</h3>
-      <p>Tejgaon College</p>
+      <a href="https://www.tejgaoncollege.edu.bd/" target="_blank">
+        Tejgaon College
+      </a>
     </div>
 
     <div class="edu-box">
       <h3>BSc in CSE</h3>
-      <p>Southeast University</p>
+      <a href="https://www.seu.edu.bd/" target="_blank">
+        Southeast University
+      </a>
     </div>
+
   </div>
 </section>
-
 <!-- SKILLS -->
 <section id="skills" class="fade-up">
   <h2 class="section-title">My Skills</h2>
@@ -148,6 +172,21 @@
       <img src="image/travel.png">
       <h3>Travel Website soon uplode</h3>
       <a href="projects/travel/index.html" target="_blank">View Project</a>
+    </div>
+    <div class="card">
+      <img src="image/Dr.jpg">
+      <h3>Doctor Landing Page</h3>
+      <a href="https://rahathassan.github.io/Confident-Dental/" target="_blank">View Project</a>
+    </div>
+        <div class="card">
+      <img src="image/drMONIJA.jpg">
+      <h3>Doctor Landing Page(DR.MONIJA kARIM)</h3>
+      <a href="https://drmonijakarim.com/" target="_blank">View Project</a>
+    </div>
+    <div class="card">
+      <img src="image/inventory.jpg">
+      <h3>Inventory Management System</h3>
+      <a href="https://rahathassan.github.io/inventory-management-system/" target="_blank">View Project</a>
     </div>
         <div class="card">
       <img src="image/e learning.png">
@@ -210,6 +249,121 @@
     </a> -->
   </div>
 </section>
+<!-- HIRE ME MODAL -->
+<div id="hireModal" class="hire-modal">
+  <div class="hire-content">
+
+    <span class="close-btn" onclick="closeHire()">&times;</span>
+
+    <h2>Hire Me Packages</h2>
+    <p>Choose a plan based on your need</p>
+
+    <div class="package-container">
+
+      <!-- BASIC -->
+      <div class="package">
+        <h3>Basic</h3>
+        <h4>$50 - $100</h4>
+        <ul>
+          <li>Facebook Ads Setup</li>
+          <li>Basic UI Design</li>
+          <li>Landing Page</li>
+          <li>Email Support</li>
+        </ul>
+        <a href="#contact" class="choose-btn">Choose Basic</a>
+      </div>
+
+      <!-- ADVANCED -->
+      <div class="package popular">
+        <h3>Advanced</h3>
+        <h4>$150 - $300</h4>
+        <ul>
+          <li>Facebook + Instagram Ads</li>
+          <li>Email Marketing Setup</li>
+          <li>Full Website (5 Pages)</li>
+          <li>UI/UX Design</li>
+        </ul>
+        <a href="#contact" class="choose-btn">Choose Advanced</a>
+      </div>
+
+      <!-- PREMIUM -->
+      <div class="package">
+        <h3>Premium</h3>
+        <h4>$400+</h4>
+        <ul>
+          <li>Full Digital Marketing</li>
+          <li>Ads Campaign Management</li>
+          <li>Full Website + SEO</li>
+          <li>UI/UX + Branding</li>
+        </ul>
+        <a href="#contact" class="choose-btn">Choose Premium</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-about">
+      <h3>Md Sazid Hassan Rahat</h3>
+      <p>
+        Frontend Developer & AI Researcher passionate about creating
+        modern web applications and innovative AI solutions.
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact Info</h4>
+      <p><i class="fa-solid fa-envelope"></i> rahathassan297@gmail.com</p>
+      <p><i class="fa-solid fa-phone"></i> 01909740956</p>
+      <p><i class="fa-solid fa-location-dot"></i> Banani, Dhaka</p>
+
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/sazid-hassan-3503b9250/" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <a href="https://www.facebook.com/sh.rahat.885008/" target="_blank">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+
+        <a href="mailto:rahathassan297@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Md Sazid Hassan Rahat | All Rights Reserved</p>
+  </div>
+</footer>
+<!-- FLOATING CONTACT BUTTONS -->
+<div class="floating-contact">
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/8801909740956" target="_blank" class="whatsapp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Email -->
+  <a href="mailto:rahathassan297@gmail.com" class="email">
+    <i class="fa-solid fa-envelope"></i>
+  </a>
+
+</div>
 
 <script src="script.js"></script>
 </body>
