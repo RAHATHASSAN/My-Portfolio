@@ -95,3 +95,18 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+function openHire(){
+    document.getElementById("hireModal").style.display = "flex";
+}
+
+function closeHire(){
+    document.getElementById("hireModal").style.display = "none";
+}
+
+// click outside to close
+window.onclick = function(event){
+    let modal = document.getElementById("hireModal");
+    if(event.target == modal){
+        modal.style.display = "none";
+    }
+}
