@@ -20,7 +20,7 @@
     <a href="#projects">Projects</a>
     <a href="#education">Education</a>
     <a href="#certificates">Achievements</a>
-    <a href="#contact">Contact</a>
+    <a href="#internship">Internship</a>
   </nav>
 </header>
 
@@ -45,7 +45,7 @@
       <div class="btns">
         <!-- <a href="#" class="btn">Hire Me</a> -->
          <a href="javascript:void(0)" class="btn" onclick="openHire()">Hire Me</a>
-        <a href="cv pdf/SH rahat cv.pdf" class="btn-outline" target="_blank">See My CV</a>
+        <a href="cv pdf/Sazid Hassan Rahat.pdf" class="btn-outline" target="_blank">See My CV</a>
       </div>
     </div>
   </div>
@@ -99,12 +99,31 @@ With over a year of experience, I am continuously learning, improving my skills,
   </div>
 
   <!-- COUNTER -->
-  <div class="extra-info">
-    <div class="box"><h3>4</h3><p>Projects</p></div>
+  <!-- <div class="extra-info">
+    <div class="box"><h3>6</h3><p>Projects</p></div>
     <div class="box"><h3>1</h3><p>Research</p></div>
-    <div class="box"><h3>0+</h3><p>Internship</p></div>
+    <div class="box"><h3>1</h3><p>Internship</p></div>
     <div class="box"><h3>3</h3><p>Certificates</p></div>
+  </div> -->
+  <div class="extra-info">
+
+  <div class="box" onclick="openDetails('projects')">
+    <h3>6</h3><p>Projects</p>
   </div>
+
+  <div class="box" onclick="openDetails('research')">
+    <h3>1</h3><p>Research</p>
+  </div>
+
+  <div class="box" onclick="openDetails('internship')">
+    <h3>1</h3><p>Internship</p>
+  </div>
+
+  <div class="box" onclick="openDetails('certificates')">
+    <h3>3</h3><p>Certificates</p>
+  </div>
+
+</div>
 </section>
 
 <!-- EDUCATION -->
@@ -148,8 +167,23 @@ With over a year of experience, I am continuously learning, improving my skills,
     <div class="skill"><i class="fa-brands fa-react"></i><p>React</p></div>
     <div class="skill"><i class="fa-brands fa-php"></i><p>PHP</p></div>
     <div class="skill"><i class="fa-solid fa-pen-ruler"></i><p>UI/UX</p></div>
+    <!-- Cyber Security -->
+<div class="skill"><i class="fa-solid fa-shield-halved"></i><p>Cyber Security</p></div>
+<div class="skill"><i class="fa-solid fa-network-wired"></i><p>Networking</p></div>
+
+<div class="skill"><i class="fa-solid fa-bug"></i><p>OWASP ZAP</p></div>
+<div class="skill"><i class="fa-solid fa-magnifying-glass"></i><p>OpenVAS</p></div>
+
+<div class="skill"><i class="fa-solid fa-satellite-dish"></i><p>Nmap</p></div>
+<div class="skill"><i class="fa-solid fa-shield-virus"></i><p>Nessus</p></div>
+
+<div class="skill"><i class="fa-solid fa-lock"></i><p>Burp Suite</p></div>
+<div class="skill"><i class="fa-solid fa-terminal"></i><p>Metasploit</p></div>
+
+<div class="skill"><i class="fa-solid fa-spider"></i><p>Nikto</p></div>
   </div>
 </section>
+
 
 <!-- PROJECTS -->
 <section id="projects" class="fade-up">
@@ -217,10 +251,10 @@ With over a year of experience, I am continuously learning, improving my skills,
       <p>Digital Marketing Certificate</p>
     </div>
 
-    <!-- <div class="cert-box">
-      <img src="images/cert4.jpg" onclick="openModal(this.src)">
-      <p>Programming Hero (Running)</p>
-    </div> -->
+    <div class="cert-box">
+      <img src="image/research.jpeg" onclick="openModal(this.src)">
+      <p>Research Certificate</p>
+    </div>
 
   </div>
 </section>
@@ -232,23 +266,84 @@ With over a year of experience, I am continuously learning, improving my skills,
 </div>
 
 <!-- CONTACT -->
-<section id="contact">
-  <h2 class="section-title">Contact Me</h2>
+<!-- INTERNSHIP -->
+<section id="internship" class="fade-up">
+  <h2 class="section-title">Internship Experience</h2>
 
-  <div class="social-icons">
-    <a href="https://www.linkedin.com/in/sazid-hassan-3503b9250/" target="_blank">
-      <i class="fa-brands fa-linkedin"></i>
-    </a>
+  <div class="internship-container">
 
-    <a href="https://www.facebook.com/sh.rahat.885008/" target="_blank">
-      <i class="fa-brands fa-facebook"></i>
-    </a>
+    <div class="internship-card">
 
-    <!-- <a href="https://wa.me/880XXXXXXXXXX" target="_blank">
-      <i class="fa-brands fa-whatsapp"></i>
-    </a> -->
+      <h3>IT Security Internship</h3>
+
+      <p class="company">
+        <b>Shahjalal Islami Bank PLC</b>
+      </p>
+
+      <p>
+        I am currently working as an <b>IT Security Intern</b> at Shahjalal Islami Bank PLC, where I am gaining real-world experience in enterprise-level cybersecurity, system monitoring, and information protection.
+      </p>
+
+      <p>
+        My responsibilities include assisting in monitoring network activities, analyzing potential security threats, supporting system hardening processes, and working with open-source security tools to ensure safe digital infrastructure.
+      </p>
+
+      <p>
+        This internship is helping me develop a strong understanding of <b>cyber security fundamentals</b>, including threat detection, vulnerability assessment, and security compliance in a banking environment.
+      </p>
+
+      <!-- Supervisor Info -->
+      <div class="supervisor-box">
+        <h4>Supervisor Details</h4>
+
+        <p><b>Name:</b> Zahid Hasan</p>
+        <p><b>Position:</b> IT Security Head</p>
+        <p><b>Organization:</b> Shahjalal Islami Bank PLC</p>
+      </div>
+
+      <!-- Tools Section -->
+      <div class="tools-section">
+        <h4>Tools & Technologies Used</h4>
+
+        <div class="tools-grid">
+
+          <div class="tool">
+            <img src="image/kali.png">
+            <p>Linux</p>
+          </div>
+
+          <div class="tool">
+            <img src="image/openvas.png">
+            <p>OpenVAS</p>
+          </div>
+
+          <div class="tool">
+            <img src="image/nmap.png">
+            <p>Nmap</p>
+          </div>
+
+          <div class="tool">
+            <img src="image/metasploit.jpg">
+            <p>Metasploit</p>
+          </div>
+
+          <div class="tool">
+            <img src="image/burpsuit.jpg">
+            <p>Burp Suite</p>
+          </div>
+
+          <!-- <div class="tool">
+            <img src="image/tools/nessus.png">
+            <p>Nessus</p>
+          </div> -->
+
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
+
 <!-- HIRE ME MODAL -->
 <div id="hireModal" class="hire-modal">
   <div class="hire-content">
@@ -270,7 +365,10 @@ With over a year of experience, I am continuously learning, improving my skills,
           <li>Landing Page</li>
           <li>Email Support</li>
         </ul>
-        <a href="#contact" class="choose-btn">Choose Basic</a>
+        <!-- <a href="#contact" class="choose-btn">Choose Basic</a> -->
+         <a href="javascript:void(0)" class="choose-btn" onclick="openClientForm('Basic')">
+Choose Basic
+</a>
       </div>
 
       <!-- ADVANCED -->
@@ -283,7 +381,10 @@ With over a year of experience, I am continuously learning, improving my skills,
           <li>Full Website (5 Pages)</li>
           <li>UI/UX Design</li>
         </ul>
-        <a href="#contact" class="choose-btn">Choose Advanced</a>
+        <a href="javascript:void(0)" class="choose-btn" onclick="openClientForm('Advanced')">
+Choose Advanced
+</a>
+        <!-- <a href="#contact" class="choose-btn">Choose Advanced</a> -->
       </div>
 
       <!-- PREMIUM -->
@@ -296,12 +397,104 @@ With over a year of experience, I am continuously learning, improving my skills,
           <li>Full Website + SEO</li>
           <li>UI/UX + Branding</li>
         </ul>
-        <a href="#contact" class="choose-btn">Choose Premium</a>
+        <a href="javascript:void(0)" class="choose-btn" onclick="openClientForm('Premium')">
+Choose Premium
+</a>
+        <!-- <a href="#contact" class="choose-btn">Choose Premium</a> -->
       </div>
 
     </div>
   </div>
 </div>
+<!-- CLIENT FORM MODAL -->
+<div id="clientFormModal" class="client-form-modal">
+
+  <div class="client-form-content">
+
+    <span class="close-btn" onclick="closeClientForm()">&times;</span>
+
+    <h2>Hire Request Form</h2>
+    <p>Fill in your project details</p>
+
+    <!-- <form id="hireForm"> -->
+      
+     <form id="hireForm"
+      action="https://formsubmit.co/rahathassan297@gmail.com"
+      method="POST">
+
+    <input type="hidden" name="_subject" value="New Hire Request">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="success.html">
+
+      <div class="input-group">
+        <label>Full Name</label>
+        <!-- <input type="text" placeholder="Enter your name" required> -->
+          <input type="text" name="Name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="input-group">
+        <label>Email Address</label>
+        <!-- <input type="email" placeholder="example@gmail.com" required> -->
+         <input type="email" name="Email" placeholder="example@gmail.com" required>
+      </div>
+
+      <div class="input-group">
+        <label>Phone Number</label>
+        <input type="tel"name="Phone" placeholder="+8801XXXXXXXXX" required>
+      </div>
+
+      <div class="input-group">
+        <label>Address</label>
+        <input type="text" name="Address" placeholder="Your Address">
+      </div>
+
+      <div class="input-group">
+        <label>Service Needed</label>
+        <!-- <select required> -->
+          <!-- <select name="Service" required>
+          <option value="">Select Service</option>
+          <option>Web Development</option>
+          <option>UI/UX Design</option>
+          <option>Digital Marketing</option>
+          <option>Facebook Ads</option>
+          <option>SEO</option>
+          <option>Full Package</option>
+        </select> -->
+        <select name="Service" required>
+    <option value="">Select Service</option>
+    <option value="Web Development">Web Development</option>
+    <option value="UI/UX Design">UI/UX Design</option>
+    <option value="Digital Marketing">Digital Marketing</option>
+    <option value="Facebook Ads">Facebook Ads</option>
+    <option value="SEO">SEO</option>
+    <option value="Full Package">Full Package</option>
+</select>
+      </div>
+
+      <div class="input-group">
+        <label>Budget</label>
+        <input type="text"name="Budget" placeholder="$100 - $500">
+      </div>
+
+      <div class="input-group">
+        <label>Project Details</label>
+        <textarea name="Project Details" rows="5"
+          placeholder="Describe your project requirements..."></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">
+        Submit Request
+      </button>
+      <!-- <div id="successMessage" style="display:none;color:green;">
+    ✅ Your request has been submitted successfully!
+</div> -->
+
+    </form>
+
+  </div>
+
+</div>
+
 <!-- FOOTER -->
 <footer class="footer">
   <div class="footer-container">
@@ -363,6 +556,12 @@ With over a year of experience, I am continuously learning, improving my skills,
     <i class="fa-solid fa-envelope"></i>
   </a>
 
+</div>
+<div id="detailModal" class="detail-modal">
+  <div class="detail-content">
+    <span class="close-btn" onclick="closeDetails()">&times;</span>
+    <div id="detailBody"></div>
+  </div>
 </div>
 
 <script src="script.js"></script>
